@@ -1,0 +1,30 @@
+<html>
+<head>
+<title> UX Team Dashboard </title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/assets/todo-list.js"></script>
+<link href="/assets/styles.css" rel="stylesheet" type ="text/css">
+
+</head>
+
+<body>
+	<h1>UX Projects</h1>
+	<div id="todo-table">
+		<ul>
+			<% for (var i=0; i < todos.length;i++){ %>
+				<li><%= todos[i].item %></li>
+
+		<%} %>
+
+		</ul>
+
+		<form>
+			<input type="text" name="item" placeholder="Add New Item..." required />
+			<button type="submit">Add New Project</button>
+		</form>
+
+		
+	</div>
+</body>
+
+</html>
